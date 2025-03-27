@@ -1,9 +1,9 @@
 spring:
   application:
-    name: scpiinvestbatch
+    name: scpi-invest-batch
     version: 1.0.0
   datasource:
-    url: jdbc:postgresql://scpiinvestbatch-db:5432/postgres
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
