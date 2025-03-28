@@ -31,7 +31,7 @@ public class BatchItemWriter implements ItemWriter<BatchDataDto> {
         if (items.isEmpty()) return;
 
         List<BatchDataDto> batchDataList = items.getItems().stream()
-                .map(item -> (BatchDataDto) item)
+                .map(BatchDataDto.class::cast)
                 .toList();
 
         batchService.saveOrUpdateBatchData(batchDataList);
